@@ -13,3 +13,12 @@ the mouse buttons, remember to update the references at the top of the loops.
 Script is based on the following:
 - http://www.autohotkey.com/docs/scripts/EasyWindowDrag.htm
 - http://www.autohotkey.com/docs/scripts/EasyWindowDrag_(KDE).htm
+
+This repo is forked from [jesseschalken/easy-move-resize][1] as 0.1.0. Changes are listed following.
+
+[1]: https://github.com/jesseschalken/easy-move-resize
+
+Changelog
+---------
+* 0.1.0 (Jun 21, 2015)
+	- Forked from original repo.
