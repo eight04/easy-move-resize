@@ -1,4 +1,5 @@
 #NoEnv
+#SingleInstance force
 SetBatchLines -1
 ListLines Off
 SetWinDelay 0
@@ -41,13 +42,17 @@ Alt & MButton::
     mouseY := newMouseY
   }
 
-Alt & LButton::
+  return
+
+$!LButton::
   MouseGetPos, , , windowUnderCursor
 
   WinSet Top, , ahk_id %windowUnderCursor%
   WinGet isMaximised, MinMax, ahk_id %windowUnderCursor%
-  if isMaximised
-    WinRestore ahk_id %windowUnderCursor%
+  if (isMaximised = 1) {
+	Send, {Blind}{LButton Down}
+	return
+  }
 
   MouseGetPos mouseX, mouseY
 
@@ -66,3 +71,8 @@ Alt & LButton::
     mouseY := newMouseY
   }
 
+  return
+
+$!LButton UP::
+	Send, {Blind}{LButton UP}
+	return
