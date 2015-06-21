@@ -20,5 +20,7 @@ This repo is forked from [jesseschalken/easy-move-resize][1] as 0.1.0. Changes a
 
 Changelog
 ---------
+* 0.2.0 (Jun 21, 2015)
+	- Do not execute if the window is maximized.
 * 0.1.0 (Jun 21, 2015)
 	- Forked from original repo.
